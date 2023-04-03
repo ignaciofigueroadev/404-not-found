@@ -1,0 +1,71 @@
+@import "variables";
+
+body {
+  background-color: $white;
+  font-family: $space-mono-font;
+  color: $black;
+}
+
+.header {
+  padding: 1.25rem;
+
+  &__notfound {
+    font-family: $inconsolata-font;
+    font-size: 1.5rem;
+    line-height: 1.7612rem;
+    letter-spacing: -0.125rem;
+    font-weight: $weight-700;
+    text-transform: uppercase;
+  }
+}
+
+.image {
+  width: 80%;
+  margin: auto;
+  padding-top: 3.125rem;
+}
+
+.info {
+  padding: 2.5rem 0.625rem 0 1.25rem;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: $weight-700;
+    line-height: 4.4431rem;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    line-height: 1.6663rem;
+    color: $gray;
+    padding: 1.875rem 0;
+  }
+
+  &__button {
+    background-color: $black;
+    color: $white;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.3125rem;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  .main {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px;
+  }
+}
